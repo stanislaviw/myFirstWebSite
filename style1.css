@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1175px;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+
+header {
+    background-color: #BEB7D8  ;
+    user-select: none;
+}
+
+.main-top {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: 35px;  
+}
+
+a {
+    text-decoration: none;
+    color: #383838;
+    font-size: 12px;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+
+.phone {
+    background-image: url(image/phone\ icon.png);
+}
+
+.skype {
+    background-image: url(image/Skype\ icon.png);
+}
+
+.tg {
+    background-image: url(image/telegram\ icon.png);
+}
+
+.btn {
+    color: #fff;
+    border: none;
+    width: 160px;
+    height: 40px;
+    background-color: #006BA7;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.callback {
+    width: 180px;
+}
+
+h1 {
+    color: #006BA7;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 20px;
+}
+
+p {
+    color:#383838;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.text {
+    text-align: center;
+    padding: 90px 0;
+    background-image: url(image/laptop\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 313px 239px;
+}
+
+.btns {
+    font-size: 12px;
+    margin-top: 30px;
+    user-select: none;
+}
+
+.btns .btn {
+    margin: 0 13px;
+}
+
+.second {
+    background-color: #BEB7D8;
+    padding: 70px 0 30px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info {
+    color: #383838;
+    font-size: 14px;
+    line-height: 18.5px;
+    min-height: 145px;
+    width: 335px;
+}
+
+b {
+    display: block;
+}
+
+footer {
+    background-color: #383838;
+    padding: 12px;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0%;
+}
+
+@media (max-width: 991px) {
+    .main-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+    .text {
+        background-position: 120% 120%;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .logo {
+        margin-bottom: 10;
+    }
+    .contacts {
+        flex-direction: column;
+        
+    }
+    .icon {
+        margin-right: 0;
+        margin-bottom: 11px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .btns .btn {
+        margin-bottom: 12px;
+    }
+    
+    .text {
+        background-position: 130% 130%;
+    }
+    .info {
+        min-height: auto;
+        margin-bottom: 5px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+}
